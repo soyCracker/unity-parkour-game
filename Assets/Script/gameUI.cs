@@ -39,6 +39,7 @@ public class gameUI : MonoBehaviour {
             pauseText.text = "Return";
             RestartButton.SetActive(true);
             QuitButton.SetActive(true);
+            Time.timeScale = 0;
         }
         else if(!gameActiveState)
         {
@@ -46,6 +47,7 @@ public class gameUI : MonoBehaviour {
             pauseText.text = "Pause";
             RestartButton.SetActive(false);
             QuitButton.SetActive(false);
+            Time.timeScale = 1;
         }
     }
 
@@ -60,6 +62,7 @@ public class gameUI : MonoBehaviour {
     public void gameRestart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
     }
 
     public void gameQuit()
