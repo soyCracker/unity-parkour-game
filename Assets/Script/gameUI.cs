@@ -7,7 +7,7 @@ public class gameUI : MonoBehaviour {
 
     public Text pauseText, scoreText;
     public static bool gameActiveState = false;
-    public GameObject StartButton, RestartButton, QuitButton, PauseButton, playerGB;
+    public GameObject StartButton, RestartButton, QuitButton, PauseButton;
 
     // Use this for initialization
     void Start () {
@@ -18,11 +18,6 @@ public class gameUI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-	    if(Input.GetKeyDown(KeyCode.Space))
-        {
-            gameStart();
-        }
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             gameActiveStateSwitch();
@@ -39,7 +34,6 @@ public class gameUI : MonoBehaviour {
             pauseText.text = "Return";
             RestartButton.SetActive(true);
             QuitButton.SetActive(true);
-            Time.timeScale = 0;
         }
         else if(!gameActiveState)
         {
@@ -47,7 +41,6 @@ public class gameUI : MonoBehaviour {
             pauseText.text = "Pause";
             RestartButton.SetActive(false);
             QuitButton.SetActive(false);
-            Time.timeScale = 1;
         }
     }
 
@@ -62,7 +55,6 @@ public class gameUI : MonoBehaviour {
     public void gameRestart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Time.timeScale = 1;
     }
 
     public void gameQuit()
@@ -72,7 +64,6 @@ public class gameUI : MonoBehaviour {
 
     public void updateScore()
     {
-
-        scoreText.text = "Score:" + (int.Parse(playerGB.transform.position.z.ToString()) - 18);
+        scoreText.text = "Score:" + ((int)(GameObject.FindWithTag("Player").transform.position.z - 18) / 10);
     }
 }
