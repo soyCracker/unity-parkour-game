@@ -3,11 +3,11 @@ using System.Collections;
 
 public class planeTrigger : MonoBehaviour {
 
-    GameObject plane;
+    GameObject Ground;
 
     // Use this for initialization
     void Start () {
-        plane = new GameObject();
+        Ground = new GameObject();
     }
 	
 	// Update is called once per frame
@@ -19,16 +19,17 @@ public class planeTrigger : MonoBehaviour {
     {
         if (e.CompareTag("Player"))
         {
-            if (gameObject.transform.parent.CompareTag("Plane2"))
+            if (gameObject.transform.parent.CompareTag("GroundTwo"))
             {
-                plane = GameObject.FindGameObjectWithTag("Plane1");
-                plane.transform.position = new Vector3(0, 0, plane.transform.position.z + 200);
+                Ground = GameObject.FindGameObjectWithTag("GroundOne");
+                Ground.transform.position = new Vector3(44, 35.1f, Ground.transform.position.z + 197.6f);
             }
             else
             {
-                plane = GameObject.FindGameObjectWithTag("Plane2");
-                plane.transform.position = new Vector3(0, 0, plane.transform.position.z + 200);
+                Ground = GameObject.FindGameObjectWithTag("GroundTwo");
+                Ground.transform.position = new Vector3(44, 35.1f, Ground.transform.position.z + 197.6f);
             }
+            GameObject.FindGameObjectWithTag("Wave").transform.position += new Vector3(0, 0, 100);
         }
     }
 

@@ -27,7 +27,7 @@ public class barrierGenerate : MonoBehaviour {
                 {
                     int seed = System.Guid.NewGuid().GetHashCode();
                     Random.InitState(seed);
-                    Vector3 barrierPos = new Vector3(i, 0.5f, Random.Range(planePos.z + 50 + (j * 50), planePos.z + 100 + (j * 50)));
+                    Vector3 barrierPos = new Vector3(i, 2.5f, Random.Range(planePos.z + 50 + (j * 50), planePos.z + 100 + (j * 50)));
                     Instantiate(barrier, barrierPos, transform.rotation);
                 }
             }
