@@ -5,4 +5,6 @@ unity-parkour-game , programming in c#.
 support keyboard and touch control.  
 支援鍵盤和觸控操作。
 
-assets used:https://www.assetstore.unity3d.com/en/#!/content/79870
+assets used: 
+https://www.assetstore.unity3d.com/en/#!/content/79870 
+https://www.assetstore.unity3d.com/en/#!/content/46974
