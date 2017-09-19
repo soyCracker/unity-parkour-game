@@ -1,0 +1,52 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 650 (ID=0xfc6)
+    Vendor:   NVIDIA
+    VRAM:     995 MB
+    Driver:   22.21.13.8541
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\UserData\Documents\UnityProject\ParkOur\ParkOur_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.563 seconds
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.977238 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 3968 -> priority: 1 
+  Thread -> id: 389c -> priority: 1 
+GAME OVER
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.673667 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 775.
+Total: 0.313344 ms (FindLiveObjects: 0.053589 ms CreateObjectMapping: 0.013653 ms MarkObjects: 0.239957 ms  DeleteObjects: 0.005120 ms)
+
+GAME OVER
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.516437 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 775.
+Total: 0.289451 ms (FindLiveObjects: 0.048469 ms CreateObjectMapping: 0.013994 ms MarkObjects: 0.222208 ms  DeleteObjects: 0.004096 ms)
+

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class gameOverTrigger : MonoBehaviour {
@@ -14,11 +13,13 @@ public class gameOverTrigger : MonoBehaviour {
 	
 	}
 
+    //與障礙物物件綁定，當角色撞到障礙物時，遊戲結束
     void OnTriggerEnter(Collider e)
     {
         if (e.CompareTag("Player"))
         {
             Debug.Log("GAME OVER");
+            //重新載入場景
             SceneManager.LoadScene(0);
             gameUI.gameActiveState = false;
         }

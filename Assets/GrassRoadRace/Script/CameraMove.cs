@@ -11,7 +11,6 @@ public class CameraMove : MonoBehaviour {
 	void Start () {
 		mainCamera.transform.localPosition = new Vector3 ( 0, 0, 0 );
 		mainCamera.transform.localRotation = Quaternion.Euler (18, 180, 0);
-	
 	}
 	
 	// Update is called once per frame
@@ -31,15 +30,12 @@ public class CameraMove : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.S)) {
 			ChangeView02();
 		}
-	}
-	
+	}	
 	
 	void MoveObj() {		
 		float moveAmount = Time.smoothDeltaTime * moveSpeed;
 		transform.Translate ( 0f, 0f, moveAmount );	
 	}
-
-
 
 	void ChangeView01() {
 		transform.position = new Vector3 (0, 2, 10);
@@ -53,8 +49,7 @@ public class CameraMove : MonoBehaviour {
 		// x:0, y:1, z:52
 		mainCamera.transform.localPosition = new Vector3 ( 0, 0, 0 );
 		mainCamera.transform.localRotation = Quaternion.Euler ( 19, 180, 0 );
-		moveSpeed = -20f;
-		
+		moveSpeed = -20f;		
 	}
 }
 

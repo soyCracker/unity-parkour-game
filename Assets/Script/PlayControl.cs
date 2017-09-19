@@ -84,6 +84,7 @@ public class PlayControl : MonoBehaviour {
         m_wasGrounded = m_isGrounded;
     }
 
+    //設定人物的跳躍，必須判定人物落地了沒
     private void JumpingAndLanding()
     {
         bool jumpCooldownOver = (Time.time - m_jumpTimeStamp) >= m_minJumpInterval;
@@ -114,15 +115,18 @@ public class PlayControl : MonoBehaviour {
         transform.position += transform.forward * m_currentV * m_moveSpeed * Time.deltaTime;     
         m_animator.SetFloat("MoveSpeed", m_currentV);
 
+        //按右方鍵，且人物X軸不為3時，向右移動
         if (Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x < 3)
         {
             transform.position += Vector3.right * 3;
         }
+        //按左方鍵，且人物X軸不為-3時，向左移動
         if (Input.GetKeyDown(KeyCode.LeftArrow) && transform.position.x > -3)
         {
             transform.position += Vector3.left * 3;
         }
 
+        //觸控操作
         if (Input.touchCount == 1)
         {
             if (Input.touches[0].phase == TouchPhase.Began)
